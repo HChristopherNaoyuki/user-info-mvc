@@ -1,0 +1,38 @@
+﻿html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Remove the default margin-bottom from body */
+body {
+    margin-bottom: 0;
+}
+
+/* Ensure main content takes available space */
+.minimal-main {
+    flex: 1;
+}
+
+/* Clean up any remaining Bootstrap defaults that conflict with minimalism */
+.btn {
+    border-radius: 0.375rem;
+    font-weight: 500;
+}
+
+.form-control {
+    border-radius: 0.375rem;
+    border: 1px solid #e2e8f0;
+    padding: 0.75rem;
+}
+
+    .form-control:focus {
+        border-color: #667eea;
+        box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+    }
